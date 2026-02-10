@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endless Slash Runner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <header>
+        <h1>Endless Slash Runner</h1>
+        <p>Jump, slash, survive. Speed increases with distance.</p>
+      </header>
+      <div class="hud" id="hud">
+        <div class="score">Distance: <span id="score">0</span>m</div>
+        <div class="state" id="state">Click to start</div>
+      </div>
+      <canvas id="game" width="480" height="270"></canvas>
+      <footer>
+        <span>Jump: Space / Up</span>
+        <span>Slash: Click / X</span>
+        <span>Restart: R</span>
+      </footer>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
