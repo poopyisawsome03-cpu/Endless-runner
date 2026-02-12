@@ -32,6 +32,29 @@ body {
   overflow: hidden;
 }
 
+.back-button {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 200;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #2a2046;
+  background: #0d0d1a;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: var(--glow-blue);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glow-accent);
+}
+
 /* Animated scanlines overlay */
 body::before {
   content: '';
